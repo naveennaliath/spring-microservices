@@ -11,8 +11,8 @@ public class LimitsController {
     @Autowired
     PropertiesConfiguration propertiesConfiguration;
 
-    @GetMapping("/load")
-    public String load() {
+    @GetMapping("/limits")
+    public String retrieveLimits() {
         return propertiesConfiguration.getMinimum()+""+propertiesConfiguration.getMaximum();
     }
 }
